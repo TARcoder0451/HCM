@@ -46,7 +46,6 @@ WHERE 1 = 1
 	AND papf.person_id = ppnf.person_id
 	AND TRUNC(:p_exception_date-1) BETWEEN ppnf.effective_StarT_Date AND ppnf.effective_End_Date
 	AND ppnf.name_type = 'GLOBAL'
-		and  papf.person_number = '12960'	
 	AND NOT EXISTS(
 				SELECT 1
 				FROM 
